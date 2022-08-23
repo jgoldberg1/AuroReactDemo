@@ -157,21 +157,7 @@ function App() {
         <br />
 
         {/* Required radio button options */}
-        <auro-radio-group ref={flierGroupEl} required>
-          <span slot="legend">
-            Have you ever flown with Alaska Air?
-          </span>
-          {flierOptions.map((option) => (
-            <auro-radio
-              key={option.id}
-              id={option.id}
-              label={option.label}
-              name={option.id}
-              value={option.value}
-              checked={option.checked || undefined}>
-            </auro-radio>
-          ))}
-        </auro-radio-group>
+
 
         {/* Required checkbox options */}
         <auro-checkbox-group ref={destinationsGroupEl} {...destinatationElAttrs}>
